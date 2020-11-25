@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment</title>
+	<link rel="stylesheet" type="text/css" href="assignment.css">
+    <style>
+    .main{
+	   width: 800px;
+ 	  margin:30px 200px;
+  	border-style: solid;
+  	border-width: 30px 10px;
+  	border-color:lightgrey;
+  	border-radius: 10px;
+    font-family: "Lucida Console", Courier, monospace;
+  }
+
+.flex-container {
+  display: flex;
+  width:700px;
+  margin:0px 50px 0px 50px;
+  justify-content: center;
+
+
+}
+#flex-containers {
+  display: flex;
+   width:700px;
+   margin:0px 50px 0px 50px;
+
+   justify-content: center;
+
+}
+
+.flex-container > div {
+  background-color: #D3D3D3;
+  margin: 10px;
+  padding: 20px;
+
+  border-radius: 10px;
+}
+
+#flex-containers > div {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+<div class="main">
+  <div class="flex-container">
+  		<div style="font-size:25px; flex:30%"><b>SWIGGY</b></div>
+	  	<div style="font-size:25px; flex:70%">NEW PLACE TO VISIT IN KP</div>
+	</div>
+  <div>
+	  <div class="flex-container">
+	  	<div style="flex:100%; font-size:30px; ">PUNE HAS A NEW KING IN ITALIAN FOOD</div>
+	  </div>
+  </div>
+  <div>
+	  <div class="flex-container">
+	  	<div style="background-color:white; flex:50%"><img src="chinese-take-out-472927590-57d31fff3df78c5833464e7b.jpg" alt="food image" height="250" width="300" ></div>
+	  	<div style="background-color:white; flex:50%"><span style="font-size:25px;">KP has a new hotspot</span><br>
+	  		<span style="font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </span>
+	  	</div>
+
+	  </div>
+  </div>
+  <div>
+	  <div class="flex-container">
+	  	<div style="flex:50%"><span style="font-size:70px">8000   </span><span style="font-size:20px">Customers</span></div>
+	  	<div style="flex:50%"><span style="font-size:70px">354  </span><span style="font-size:20px">Reviews</span></div>
+	  </div>
+  </div>
+</div>
+</body>
+</html>
