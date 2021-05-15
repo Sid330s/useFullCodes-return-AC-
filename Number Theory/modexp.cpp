@@ -1,9 +1,9 @@
 #include <stdio.h>
-long mod;
-long power(long a,long b){
+long long int mod;
+long long int power(long long int a,long long int b){
 	if(b==0)
 		return 1;
-	long res = power(a%mod,((b)/2))%mod;
+	long long int res = power(a%mod,((b)/2))%mod;
 	res = (res*res)%mod;
 
 	if(b&1)
@@ -11,13 +11,12 @@ long power(long a,long b){
 	return res;
 }
 
-long power(long,long);
 int main(){
 	int t;
 	scanf("%d",&t);
 	while(t--){
-		long a,b;
-		scanf("%ld%ld%ld",&a,&b,&mod);
-		printf("%ld\n",power(a,b));
+		long long int a,b;
+		scanf("%lld%lld%lld",&a,&b,&mod);
+		printf("%lld\n",power(a,b));
 	}
 }
