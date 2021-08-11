@@ -32,6 +32,6 @@ int main(){
   while(t--){
   cin>>str1;
   cin>>str2;
-  
+}
   return 0;
 }
